@@ -1,0 +1,20 @@
+{
+  "age_middle (30-50)": {
+    "group": "middle (30-50)",
+    "n_samples": 88,
+    "accuracy": 0.8068,
+    "predicted_high_risk_rate": 0.3295
+  },
+  "age_young (<30)": {
+    "group": "young (<30)",
+    "n_samples": 83,
+    "accuracy": 0.6867,
+    "predicted_high_risk_rate": 0.5904
+  },
+  "age_senior (50+)": {
+    "group": "senior (50+)",
+    "n_samples": 29,
+    "accuracy": 0.6552,
+    "predicted_high_risk_rate": 0.3793
+  }
+}

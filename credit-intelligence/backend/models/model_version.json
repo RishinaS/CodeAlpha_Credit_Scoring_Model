@@ -1,0 +1,49 @@
+{
+  "version": "credit-risk-v1.0",
+  "algorithm": "logistic_regression",
+  "dataset": "German Credit Dataset (UCI / OpenML credit-g v1)",
+  "dataset_size": 1000,
+  "training_size": 800,
+  "test_size": 200,
+  "training_timestamp": "2026-09-13T13:48:00.255319",
+  "features_numerical": [
+    "duration",
+    "credit_amount",
+    "installment_commitment",
+    "residence_since",
+    "age",
+    "existing_credits",
+    "num_dependents",
+    "credit_per_month",
+    "installment_to_credit"
+  ],
+  "features_categorical": [
+    "checking_status",
+    "credit_history",
+    "purpose",
+    "savings_status",
+    "employment",
+    "personal_status",
+    "other_parties",
+    "property_magnitude",
+    "other_payment_plans",
+    "housing",
+    "job",
+    "own_telephone",
+    "foreign_worker",
+    "age_group"
+  ],
+  "engineered_features": [
+    "credit_per_month",
+    "age_group",
+    "installment_to_credit"
+  ],
+  "target_encoding": {
+    "0": "Low Risk (good credit)",
+    "1": "High Risk (bad credit)"
+  },
+  "risk_score_formula": "risk_score = round(predicted_probability_of_high_risk * 100)",
+  "class_imbalance_handling": "class_weight=balanced, stratified_split",
+  "selection_rationale": "Weighted composite: ROC-AUC(40%) + F1(35%) + Recall(25%)",
+  "shap_available": true
+}

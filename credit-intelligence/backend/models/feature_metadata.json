@@ -1,0 +1,210 @@
+{
+  "all_numerical": [
+    "duration",
+    "credit_amount",
+    "installment_commitment",
+    "residence_since",
+    "age",
+    "existing_credits",
+    "num_dependents",
+    "credit_per_month",
+    "installment_to_credit"
+  ],
+  "all_categorical": [
+    "checking_status",
+    "credit_history",
+    "purpose",
+    "savings_status",
+    "employment",
+    "personal_status",
+    "other_parties",
+    "property_magnitude",
+    "other_payment_plans",
+    "housing",
+    "job",
+    "own_telephone",
+    "foreign_worker",
+    "age_group"
+  ],
+  "transformed_features": [
+    "duration",
+    "credit_amount",
+    "installment_commitment",
+    "residence_since",
+    "age",
+    "existing_credits",
+    "num_dependents",
+    "credit_per_month",
+    "installment_to_credit",
+    "checking_status_0<=X<200",
+    "checking_status_<0",
+    "checking_status_>=200",
+    "checking_status_no checking",
+    "credit_history_all paid",
+    "credit_history_critical/other existing credit",
+    "credit_history_delayed previously",
+    "credit_history_existing paid",
+    "credit_history_no credits/all paid",
+    "purpose_business",
+    "purpose_domestic appliance",
+    "purpose_education",
+    "purpose_furniture/equipment",
+    "purpose_new car",
+    "purpose_other",
+    "purpose_radio/tv",
+    "purpose_repairs",
+    "purpose_retraining",
+    "purpose_used car",
+    "savings_status_100<=X<500",
+    "savings_status_500<=X<1000",
+    "savings_status_<100",
+    "savings_status_>=1000",
+    "savings_status_no known savings",
+    "employment_1<=X<4",
+    "employment_4<=X<7",
+    "employment_<1",
+    "employment_>=7",
+    "employment_unemployed",
+    "personal_status_female div/dep/mar",
+    "personal_status_male div/sep",
+    "personal_status_male mar/wid",
+    "personal_status_male single",
+    "other_parties_co applicant",
+    "other_parties_guarantor",
+    "other_parties_none",
+    "property_magnitude_car",
+    "property_magnitude_life insurance",
+    "property_magnitude_no known property",
+    "property_magnitude_real estate",
+    "other_payment_plans_bank"
+  ],
+  "feature_importance": {
+    "checking_status_no checking": 0.457171,
+    "installment_commitment": 0.345735,
+    "credit_history_critical/other existing credit": 0.334802,
+    "credit_amount": 0.312189,
+    "savings_status_<100": 0.27252,
+    "duration": 0.254616,
+    "personal_status_male single": 0.253685,
+    "checking_status_<0": 0.25163,
+    "purpose_new car": 0.172978,
+    "employment_4<=X<7": 0.165638,
+    "property_magnitude_no known property": 0.164535,
+    "age_group_middle_aged": 0.163141,
+    "purpose_used car": 0.148509,
+    "property_magnitude_real estate": 0.147808,
+    "age_group_young": 0.141088,
+    "housing_rent": 0.13528,
+    "other_payment_plans_none": 0.132766,
+    "purpose_radio/tv": 0.11443,
+    "age": 0.114114,
+    "housing_for free": 0.112759,
+    "savings_status_no known savings": 0.10495,
+    "num_dependents": 0.104729,
+    "existing_credits": 0.100564,
+    "other_payment_plans_bank": 0.09769,
+    "checking_status_0<=X<200": 0.09441,
+    "purpose_education": 0.094383,
+    "own_telephone_yes": 0.091496,
+    "property_magnitude_life insurance": 0.072793,
+    "employment_<1": 0.068347,
+    "employment_unemployed": 0.064356,
+    "other_parties_guarantor": 0.063384,
+    "property_magnitude_car": 0.059223,
+    "own_telephone_none": 0.057456,
+    "job_skilled": 0.049155,
+    "credit_history_no credits/all paid": 0.045391,
+    "savings_status_>=1000": 0.044755,
+    "job_unskilled resident": 0.043033,
+    "age_group_senior": 0.04126,
+    "foreign_worker_no": 0.036954,
+    "personal_status_male div/sep": 0.034128,
+    "employment_1<=X<4": 0.032855,
+    "foreign_worker_yes": 0.032763,
+    "installment_to_credit": 0.029632,
+    "purpose_other": 0.027786,
+    "credit_history_all paid": 0.022882,
+    "age_group_young_adult": 0.021896,
+    "other_parties_co applicant": 0.021617,
+    "purpose_furniture/equipment": 0.021538,
+    "residence_since": 0.021158,
+    "savings_status_100<=X<500": 0.019935,
+    "job_unemp/unskilled non res": 0.018427,
+    "credit_history_existing paid": 0.018096,
+    "purpose_business": 0.016512,
+    "savings_status_500<=X<1000": 0.015424,
+    "purpose_repairs": 0.01495,
+    "purpose_retraining": 0.01377,
+    "employment_>=7": 0.010579,
+    "credit_per_month": 0.010344,
+    "credit_history_delayed previously": 0.009759,
+    "checking_status_>=200": 0.007697,
+    "other_parties_none": 0.006029,
+    "other_payment_plans_stores": 0.00535,
+    "personal_status_female div/dep/mar": 0.005212,
+    "personal_status_male mar/wid": 0.002747,
+    "job_high qualif/self emp/mgmt": 0.002721,
+    "housing_own": 0.000493,
+    "purpose_domestic appliance": 0.0003
+  },
+  "top_10_features": [
+    {
+      "feature": "checking_status_no checking",
+      "importance": 0.457171
+    },
+    {
+      "feature": "installment_commitment",
+      "importance": 0.345735
+    },
+    {
+      "feature": "credit_history_critical/other existing credit",
+      "importance": 0.334802
+    },
+    {
+      "feature": "credit_amount",
+      "importance": 0.312189
+    },
+    {
+      "feature": "savings_status_<100",
+      "importance": 0.27252
+    },
+    {
+      "feature": "duration",
+      "importance": 0.254616
+    },
+    {
+      "feature": "personal_status_male single",
+      "importance": 0.253685
+    },
+    {
+      "feature": "checking_status_<0",
+      "importance": 0.25163
+    },
+    {
+      "feature": "purpose_new car",
+      "importance": 0.172978
+    },
+    {
+      "feature": "employment_4<=X<7",
+      "importance": 0.165638
+    }
+  ],
+  "engineered_feature_descriptions": {
+    "credit_per_month": {
+      "formula": "credit_amount / duration",
+      "interpretation": "Monthly credit burden in currency units",
+      "reason": "Higher monthly burden relative to income increases default risk"
+    },
+    "age_group": {
+      "formula": "pd.cut(age, bins=[0,25,35,50,100])",
+      "interpretation": "Life stage group of applicant",
+      "reason": "Age-based financial stability patterns"
+    },
+    "installment_to_credit": {
+      "formula": "installment_commitment / credit_amount * 1000",
+      "interpretation": "Installment commitment relative to credit amount",
+      "reason": "Higher ratio indicates proportionally heavy payment obligation"
+    }
+  },
+  "shap_method": "TreeExplainer"
+}
